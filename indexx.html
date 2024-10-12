@@ -15,6 +15,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            color: white;
         }
         body{
             width: 100%;
@@ -29,32 +30,16 @@
             position: relative; /* Make it stay on top */
             z-index: 2;
         }
-        .logo, .navigasi, .language{
+        .navigasi {
             height: 100%;
         }
-        .logo{
-            width: 12%;
+        .navigasi{
+            width: 100%;
             display: flex;
             justify-content: center; /* Mencentral secara horizontal */
             align-items: center; /* Mencentral secara vertikal */
-            margin-left: 30px;
         }
-        .navigasi{
-            width: 60%;
-            display: flex;
-            justify-content: end; /* Mencentral secara horizontal */
-            align-items: center; /* Mencentral secara vertikal */
-        }
-        .language{
-            width: 28%;
-            display: flex;
-            color: #fff;
-            justify-content: end; /* Mencentral secara horizontal */
-            align-items: center; /* Mencentral secara vertikal */
-        }
-        .imglogo{
-           width: 100%;
-        }
+
         .navigasi ul{
             list-style-type: none;
             margin: 0;
@@ -73,18 +58,6 @@
             font-size: 24px;
         }
         .navigasi ul li a:hover{
-            color: #717171;
-        }
-        .language a{
-            text-decoration: none;
-            color: #fff;
-            font-weight: 500;
-            font-size: 18px;
-        }
-        .language p{
-            margin-right: 100px;
-        }
-        .language a:hover{
             color: #717171;
         }
 
@@ -131,52 +104,78 @@
         .right{
             width: 50%;
             height: 100%;
-            background-image: url('img/main_visual.png');
-            background-size: cover;
-            background-position: center;
-            position: absolute; /* Make it cover the entire container */
-            top: 0; /* Starts at the top of the page */
-            right: 0;
-            z-index: 1; /* Behind navbar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        
+        .right img{
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .project{
+            width: 100%;
+            margin-top: 80px;
+        }
+        .project h1{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .card{
+            width: 30%;
+            padding: 20px;
+            margin: 20px;
+            background-color: #061939;
+            border-radius: 10px;
+        }
+        .pembungkus-card{
+            display: flex;
+            flex-direction: row;
+        }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="img/miku_expo.png" alt="icon" class="imglogo"></a>
-        </div>
         <div class="navigasi">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Goods</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Tokyo</a></li>
-                <li><a href="#">Osaka</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </div>
-        <div class="language">
-                <p>
-                    <a href="#">EN</a>/<a href="#">JP</a>
-                </p>
-        </div>
     </div>
+    <hr>
     <div class="content">
         <div class="left">
-            <img src="img/miku_expo.png" alt="logo" style="width: 60%;">
-            <h2>2024 Japan</h2>
-            <p>“MIKU EXPO” is the virtual singer Hatsune Miku’s world tour series which will celebrate its 10th anniversary in 2024. In
-            the 10 years since the first concert, “MIKU EXPO” has traveled to 30 cities worldwide, performing 68 shows in front of
-            over 190,000 attendees, and gathered over 60,000 viewers for the MIKU EXPO 2021 Online livestream.</p>
-            <button>Get Tickets</button>
+            <h1 style="font-size: 40px;">Nindya Alif Romland</h1>
+            <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quos quibusdam quae reprehenderit incidunt neque assumenda temporibus quas nesciunt, cupiditate id ut vel ex fugiat pariatur sapiente laboriosam architecto dolorem.</p>
+            <a href="https://github.com/nndyfr"><button>Github</button></a>
         </div>
         <div class="right">
-            
+            <img src="img/WhatsApp Image 2024-10-12 at 17.29.18.jpeg" width="500px" height="500px">
         </div>
     </div>
-    <div class="footer">
-
+    <hr>
+    <div class="project">
+        <h1>Project</h1>
+        <div class="pembungkus-card">
+        <div class="card">
+            <h3>Project 1</h3>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam blanditiis corrupti itaque nostrum. 
+                Ad, nam rem quia debitis laudantium, asperiores ratione ut qui provident aliquid quisquam consequatur assumenda vero!</p>
+        </div>
+        <div class="card">
+                <h3>Project 2</h3>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam blanditiis corrupti itaque nostrum. 
+                    Ad, nam rem quia debitis laudantium, asperiores ratione ut qui provident aliquid quisquam consequatur assumenda vero!</p>
+            </div>
+                <div class="card">
+                    <h3>Project 3</h3>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam blanditiis corrupti itaque nostrum. 
+                        Ad, nam rem quia debitis laudantium, asperiores ratione ut qui provident aliquid quisquam consequatur assumenda vero!</p>
+                </div>
+            </div>
     </div>
 </body>
 </html>
