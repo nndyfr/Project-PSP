@@ -65,6 +65,7 @@
             display: flex;
             width: 100%;
             height: 700px;
+            background: linear-gradient(to bottom, #87CEEB,#FFFFFF);
         }
         .left{
             width: 50%;
@@ -77,6 +78,10 @@
             color: #fff;
             z-index: 2; /* Supaya teks tetap di atas gambar */
         }
+        .left h1{
+            font-size: 400px;
+            color: #061939;
+        }
         .left h2{
             margin-top: -10px;
         }
@@ -84,12 +89,12 @@
             font-size: 20px;
             font-weight: 300;
             text-align: justify;
-            color: #A7A9BE;
+            color: #061939;
             margin-top: 5px;
         }
         .left button{
             padding: 15px 25px;
-            background-color: #6246EA;
+            background-color: #061939;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -99,7 +104,7 @@
             margin-top: 20px;
         }
         .left button:hover{
-            background-color: #4D3ABF;
+            background-color: #717171;
         }
         .right{
             width: 50%;
@@ -115,11 +120,14 @@
         .project{
             width: 100%;
             margin-top: 80px;
+            background: linear-gradient(to bottom, #87CEEB,#FFFFFF, #87CEEB);
+            padding: 40px 0;
         }
         .project h1{
             text-align: center;
             font-size: 40px;
-            font-weight: 600;
+            font-weight: 600px;
+            color: #061939;
             margin-bottom: 40px;
         }
         .card{
@@ -131,7 +139,19 @@
         }
         .pembungkus-card{
             display: flex;
-            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            padding: 0 20px;
+
+        }
+        .card h3{
+            color: #FFF;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .card p{
+            text-align: justify;
+            color: #FFF;
         }
     </style>
 </head>
@@ -149,7 +169,8 @@
     <div class="content">
         <div class="left">
             <h1 style="font-size: 40px;">Nindya Alif Romland</h1>
-            <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quos quibusdam quae reprehenderit incidunt neque assumenda temporibus quas nesciunt, cupiditate id ut vel ex fugiat pariatur sapiente laboriosam architecto dolorem.</p>
+            <p>“Halo! aku Nindya Alif Romland, biasanya dipanggil dengan Nindy. Mahasiswa S1 Informatika Universitas 
+                Jenderal Soedirman."</p>
             <a href="https://github.com/nndyfr"><button>Github</button></a>
         </div>
         <div class="right">
@@ -161,19 +182,20 @@
         <h1>Project</h1>
         <div class="pembungkus-card">
         <div class="card">
-            <h3>Project 1</h3>
-            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam blanditiis corrupti itaque nostrum. 
-                Ad, nam rem quia debitis laudantium, asperiores ratione ut qui provident aliquid quisquam consequatur assumenda vero!</p>
+            <h3>Aplikasi Pengelolaan Tugas</h3>
+            <p style="text-align: justify;">Aplikasi berbasis web yang dirancang untuk membantu pengguna dalam mengelola dan mengatur tugas harian. 
+                Diharapkan pengguna dapat menambahkan, mengedit, dan menghapus tugas serta menetapkan tenggat waktu. Proyek ini dibangun menggunakan HTML, CSS, 
+                dan JavaScript, dengan fitur database sederhana. </p>
         </div>
         <div class="card">
-                <h3>Project 2</h3>
-                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam blanditiis corrupti itaque nostrum. 
-                    Ad, nam rem quia debitis laudantium, asperiores ratione ut qui provident aliquid quisquam consequatur assumenda vero!</p>
+                <h3>Analisis Data Penjualan</h3>
+                <p style="text-align: justify;">Proyek ini bertujuan untuk menganalisis tren penjualan toko online menggunakan data penjualan bulanan. Dengan visualisasi data 
+                    menggunakan Python dan Matplotlib, proyek ini memberikan wawasan tentang produk terlaris dan waktu promosi terbaik.</p>
             </div>
                 <div class="card">
-                    <h3>Project 3</h3>
-                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam blanditiis corrupti itaque nostrum. 
-                        Ad, nam rem quia debitis laudantium, asperiores ratione ut qui provident aliquid quisquam consequatur assumenda vero!</p>
+                    <h3>Model Prediksi Harga Rumah</h3>
+                    <p style="text-align: justify;">Membangun model machine learning untuk memprediksi harga rumah berdasarkan fitur seperti luas tanah, jumlah kamar, 
+                        dan lokasi. Proyek ini menggunakan algoritma regresi linear dan dataset yang diambil dari Kaggle untuk melatih model prediksi yang akurat.</p>
                 </div>
             </div>
     </div>
